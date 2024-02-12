@@ -1,0 +1,565 @@
+{
+  "version": 0,
+  "entities": {
+    "d32b1c4e-d08e-4fb0-9107-4c88a281ee71": {
+      "components": [
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "envmapbake",
+          "props": {
+            "bakePosition": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "bakePositionOffset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "bakeScale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "bakeType": "Baked",
+            "resolution": 2048,
+            "refreshMode": "OnAwake",
+            "envMapOrigin": "__$project$__/uvx-bubble-pop/BubbleSystem.envmap.png",
+            "boxProjection": true
+          }
+        },
+        {
+          "name": "postprocessing",
+          "props": {
+            "enabled": true,
+            "effects": {
+              "SMAAEffect": {
+                "isActive": false
+              },
+              "OutlineEffect": {
+                "isActive": false
+              },
+              "SSREffect": {
+                "intensity": 0.39,
+                "distance": 2,
+                "fade": 1,
+                "blend": 1,
+                "correctionRadius": 4,
+                "jitter": 0.010000000000000009
+              },
+              "BloomEffect": {
+                "kernelSize": 3,
+                "luminanceThreshold": 0.5,
+                "luminanceSmoothing": 0.22,
+                "intensity": 1.5
+              },
+              "BrightnessContrastEffect": {
+                "brightness": -0.26,
+                "contrast": 0.58
+              }
+            }
+          }
+        }
+      ],
+      "name": "empty_scene"
+    },
+    "bb362197-f14d-4da7-9c3c-1ed834386423": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "scene-preview-camera",
+          "props": {}
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 0,
+      "name": "scene preview camera"
+    },
+    "e7d6bfb1-6390-4a8b-b744-da83b059c2d3": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "skybox",
+          "props": {
+            "backgroundColor": 0,
+            "equirectangularPath": "__$project$__/uvx-bubble-pop/assets/bp_bkg002_blue_4k.png",
+            "cubemapPath": "__$project$__/default-project/assets/skyboxsun25deg",
+            "backgroundType": 2,
+            "skyboxProps": {
+              "turbidity": 10,
+              "rayleigh": 1,
+              "luminance": 1,
+              "mieCoefficient": 0.004999999999999893,
+              "mieDirectionalG": 0.99,
+              "inclination": 0.10471975511965978,
+              "azimuth": 0.16666666666666666
+            }
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 1,
+      "name": "skybox"
+    },
+    "38793f94-0b92-4ea1-af7b-5ec0e117628d": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "ground-plane",
+          "props": {
+            "color": 4802889,
+            "visible": true
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": false,
+            "receive": true
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 2,
+      "name": "ground plane"
+    },
+    "3e8a430e-9dcf-440e-990c-44ecb8051762": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": -5.053215498074303e-16,
+              "y": -1,
+              "z": -6.12323399573677e-17,
+              "w": -6.123234262925839e-17
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "spawn-point",
+          "props": {
+            "permissionedUsers": []
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 3,
+      "name": "spawn point"
+    },
+    "f77dc4c6-c9a6-433d-8102-4a9a8e1c0ce9": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "hemisphere-light",
+          "props": {
+            "skyColor": 16777215,
+            "groundColor": 16777215,
+            "intensity": 1
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 4,
+      "name": "hemisphere light"
+    },
+    "cb045cfd-8daf-4a2b-b764-35625be54a11": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 10,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0.24690793740359293,
+              "y": 0.28965548016032816,
+              "z": 0.07761295437009141,
+              "w": 0.9214729527089438
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "directional-light",
+          "props": {
+            "color": 16777215,
+            "intensity": 1,
+            "cameraFar": 200,
+            "castShadow": true,
+            "shadowMapResolution": 512,
+            "shadowBias": -0.00001,
+            "shadowRadius": 1,
+            "useInCSM": true
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 5,
+      "name": "directional light"
+    },
+    "f1e3495b-e35b-4e70-b664-a83061a799f1": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 2.0517758214901636,
+              "z": -2.15075282046605
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "system",
+          "props": {
+            "filePath": "__$project$__/uvx-bubble-pop/src/systems/BubblePhysicsSystem.ts",
+            "insertUUID": "ee.engine.simulation-group",
+            "insertOrder": "with",
+            "enableClient": true,
+            "enableServer": true,
+            "args": {}
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 6,
+      "name": "BubbleSystem"
+    },
+    "c4033ac4-e9e0-4990-b3a3-79cecc740e38": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0.5,
+              "y": 1.25,
+              "z": -4.837206743466503
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "gltf-model",
+          "props": {
+            "src": "__$project$__/uvx-bubble-pop/assets/Emitter.glb",
+            "resource": {
+              "src": "__$project$__/uvx-bubble-pop/assets/Emitter.glb"
+            },
+            "generateBVH": false,
+            "avoidCameraOcclusion": false
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": "Texture",
+            "envMapTextureType": "Equirectangular",
+            "envMapSourceColor": 4095,
+            "envMapSourceURL": "__$project$__/uvx-bubble-pop/BubbleSystem.envmap.png",
+            "envMapIntensity": 1.38
+          }
+        },
+        {
+          "name": "loop-animation",
+          "props": {
+            "activeClipIndex": -1,
+            "hasAvatarAnimations": false
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 7,
+      "name": "Bubble Emitter"
+    },
+    "7bf66024-61fd-4f9b-9062-6df759027c40": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 2.0517758214901636,
+              "z": -2.15075282046605
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "system",
+          "props": {
+            "filePath": "__$project$__/uvx-bubble-pop/src/systems/BubbleEmitterSystem.ts",
+            "insertUUID": "ee.engine.simulation-group",
+            "insertOrder": "with",
+            "enableClient": true,
+            "enableServer": true,
+            "args": {}
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 9,
+      "name": "BubbleEmitterSystem"
+    },
+    "7bf66024-61fd-4f9b-9062-6df759027c41": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 2.0517758214901636,
+              "z": -2.15075282046605
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "system",
+          "props": {
+            "filePath": "__$project$__/uvx-bubble-pop/src/systems/BubbleUISystem.ts",
+            "insertUUID": "ee.engine.simulation-group",
+            "insertOrder": "with",
+            "enableClient": true,
+            "enableServer": false,
+            "args": {}
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 10,
+      "name": "BubbleUISystem"
+    },
+    "75dd8405-7eea-4634-82f6-eb30b60170df": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0.47263010439908326,
+              "y": 1.2122983734576573,
+              "z": -4.813617530224699
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "prefab",
+          "props": {
+            "src": "__$project$__/uvx-bubble-pop/assets/portal.xre.gltf"
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 11,
+      "name": "Portal"
+    }
+  },
+  "root": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71"
+}

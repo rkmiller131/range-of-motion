@@ -1,0 +1,784 @@
+{
+  "version": 0,
+  "entities": {
+    "d32b1c4e-d08e-4fb0-9107-4c88a281ee71": {
+      "components": [
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "envmapbake",
+          "props": {
+            "bakePosition": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "bakePositionOffset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "bakeScale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "bakeType": "Baked",
+            "resolution": 2048,
+            "refreshMode": "OnAwake",
+            "envMapOrigin": "__$project$__/default-project/default.envmap.png",
+            "boxProjection": true
+          }
+        }
+      ],
+      "name": "empty_scene"
+    },
+    "bb362197-f14d-4da7-9c3c-1ed834386423": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 0,
+      "name": "scene preview camera"
+    },
+    "e7d6bfb1-6390-4a8b-b744-da83b059c2d3": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "skybox",
+          "props": {
+            "backgroundColor": 0,
+            "equirectangularPath": "__$project$__/uvx-bubble-pop/assets/aurora-small.ktx2",
+            "cubemapPath": "__$project$__/default-project/assets/skyboxsun25deg/",
+            "backgroundType": 2,
+            "skyboxProps": {
+              "turbidity": 10,
+              "rayleigh": 1,
+              "luminance": 1,
+              "mieCoefficient": 0.004999999999999893,
+              "mieDirectionalG": 0.99,
+              "inclination": 0.10471975511965978,
+              "azimuth": 0.16666666666666666
+            }
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 1,
+      "name": "skybox"
+    },
+    "38793f94-0b92-4ea1-af7b-5ec0e117628d": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "ground-plane",
+          "props": {
+            "color": 8311585,
+            "visible": true
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": false,
+            "receive": true
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 2,
+      "name": "ground plane"
+    },
+    "3e8a430e-9dcf-440e-990c-44ecb8051762": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 5.053215498074303e-16,
+              "y": 1,
+              "z": 6.12323399573677e-17,
+              "w": 6.123234262925839e-17
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "spawn-point",
+          "props": {
+            "permissionedUsers": []
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 3,
+      "name": "spawn point"
+    },
+    "f77dc4c6-c9a6-433d-8102-4a9a8e1c0ce9": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "hemisphere-light",
+          "props": {
+            "skyColor": 16777215,
+            "groundColor": 16777215,
+            "intensity": 1
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 4,
+      "name": "hemisphere light"
+    },
+    "cb045cfd-8daf-4a2b-b764-35625be54a11": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 10,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0.246907937403593,
+              "y": 0.28965548016032816,
+              "z": 0.07761295437009143,
+              "w": 0.9214729527089437
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 0.9999999999999999
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "directional-light",
+          "props": {
+            "color": 16777215,
+            "intensity": 1,
+            "cameraFar": 200,
+            "castShadow": true,
+            "shadowBias": -0.00001,
+            "shadowRadius": 1,
+            "useInCSM": true
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 5,
+      "name": "directional light"
+    },
+    "fd60d7a9-5d10-4f7b-9cab-3b1ca0b6f537": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "scene-preview-camera",
+          "props": {}
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 6,
+      "name": "entity-6"
+    },
+    "461328bb-67c0-4ed8-a3f3-cfd10e6deb8e": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0.7319029358940965,
+              "z": -9.200000000000001
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 7,
+      "name": "New Group"
+    },
+    "b0bac71a-a1c3-45af-b3aa-b2efc6d965a3": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": -6
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "volumetric",
+          "props": {
+            "useLoadingEffect": false,
+            "paths": [
+              "https://resources-volumetric.etherealengine.com/yoga.manifest"
+            ],
+            "paused": false,
+            "volume": 1,
+            "playMode": "loop"
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 8,
+      "name": "New Volumetric"
+    },
+    "ebea1b37-8b83-4873-8d1c-a663c9d171f5": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0.14034212266418367,
+              "z": 0.9972940974818325
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "particle-system",
+          "props": {
+            "systemParameters": {
+              "version": "1.0",
+              "autoDestroy": false,
+              "looping": true,
+              "prewarm": false,
+              "material": "dud",
+              "duration": 5,
+              "shape": {
+                "type": "sphere",
+                "radius": 0.02499999999999991
+              },
+              "startLife": {
+                "type": "IntervalValue",
+                "a": 2,
+                "b": 2.5
+              },
+              "startSpeed": {
+                "type": "IntervalValue",
+                "a": 0,
+                "b": 0
+              },
+              "startRotation": {
+                "type": "IntervalValue",
+                "a": 0,
+                "b": 0
+              },
+              "startSize": {
+                "type": "IntervalValue",
+                "a": 2,
+                "b": 2
+              },
+              "startColor": {
+                "type": "ConstantColor",
+                "color": {
+                  "r": 1,
+                  "g": 1,
+                  "b": 1,
+                  "a": 1
+                }
+              },
+              "emissionOverTime": {
+                "type": "ConstantValue",
+                "value": 3
+              },
+              "emissionOverDistance": {
+                "type": "ConstantValue",
+                "value": 0
+              },
+              "emissionBursts": [],
+              "onlyUsedByOther": false,
+              "rendererEmitterSettings": {
+                "startLength": {
+                  "type": "ConstantValue",
+                  "value": 1
+                },
+                "followLocalOrigin": true
+              },
+              "renderMode": 0,
+              "texture": "__$project$__/uvx-bubble-pop/assets/radiating_triangle_spritesheet.png",
+              "instancingGeometry": "",
+              "startTileIndex": {
+                "type": "ConstantValue",
+                "value": 0
+              },
+              "uTileCount": 8,
+              "vTileCount": 8,
+              "blending": 1,
+              "behaviors": [],
+              "worldSpace": true
+            },
+            "behaviorParameters": [
+              {
+                "type": "FrameOverLife",
+                "frame": {
+                  "type": "PiecewiseBezier",
+                  "functions": [
+                    {
+                      "function": {
+                        "p0": 0,
+                        "p1": 0,
+                        "p2": 64,
+                        "p3": 64
+                      },
+                      "start": 0
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "ColorOverLife",
+                "color": {
+                  "type": "Gradient",
+                  "functions": [
+                    {
+                      "function": {
+                        "type": "ColorRange",
+                        "a": {
+                          "r": 1,
+                          "g": 1,
+                          "b": 1,
+                          "a": 0
+                        },
+                        "b": {
+                          "r": 0.01568627450980392,
+                          "g": 0.023529411764705882,
+                          "b": 0.7254901960784313,
+                          "a": 1
+                        }
+                      },
+                      "start": 0
+                    },
+                    {
+                      "start": 0.33000000000000007,
+                      "function": {
+                        "type": "ColorRange",
+                        "a": {
+                          "r": 0.01568627450980392,
+                          "g": 0.023529411764705882,
+                          "b": 0.7254901960784313,
+                          "a": 1
+                        },
+                        "b": {
+                          "r": 0.12941176470588237,
+                          "g": 0.8274509803921568,
+                          "b": 0.16862745098039217,
+                          "a": 1
+                        }
+                      }
+                    },
+                    {
+                      "start": 0.6600000000000001,
+                      "function": {
+                        "type": "ColorRange",
+                        "a": {
+                          "r": 0.49411764705882355,
+                          "g": 0.8274509803921568,
+                          "b": 0.12941176470588237,
+                          "a": 1
+                        },
+                        "b": {
+                          "r": 1,
+                          "g": 1,
+                          "b": 1,
+                          "a": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        }
+      ],
+      "parent": "461328bb-67c0-4ed8-a3f3-cfd10e6deb8e",
+      "index": 0,
+      "name": "New Particle Emitter"
+    },
+    "6ceb92b0-e513-4488-927a-0c518663081a": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": -0.2680998926464473,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0.7071067811865475,
+              "y": 0,
+              "z": 0,
+              "w": 0.7071067811865476
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "particle-system",
+          "props": {
+            "systemParameters": {
+              "version": "1.0",
+              "autoDestroy": false,
+              "looping": true,
+              "prewarm": false,
+              "material": "dud",
+              "duration": 5,
+              "shape": {
+                "type": "point"
+              },
+              "startLife": {
+                "type": "IntervalValue",
+                "a": 1,
+                "b": 2
+              },
+              "startSpeed": {
+                "type": "IntervalValue",
+                "a": 0,
+                "b": 0
+              },
+              "startRotation": {
+                "type": "IntervalValue",
+                "a": 0,
+                "b": 0
+              },
+              "startSize": {
+                "type": "IntervalValue",
+                "a": 3,
+                "b": 5
+              },
+              "startColor": {
+                "type": "ConstantColor",
+                "color": {
+                  "r": 0.12941176470588237,
+                  "g": 0.8274509803921568,
+                  "b": 0.16862745098039217,
+                  "a": 0.050000000000000044
+                }
+              },
+              "emissionOverTime": {
+                "type": "ConstantValue",
+                "value": 2
+              },
+              "emissionOverDistance": {
+                "type": "ConstantValue",
+                "value": 0
+              },
+              "emissionBursts": [],
+              "onlyUsedByOther": false,
+              "rendererEmitterSettings": {
+                "startLength": {
+                  "type": "ConstantValue",
+                  "value": 1
+                },
+                "followLocalOrigin": true
+              },
+              "renderMode": 2,
+              "texture": "",
+              "instancingGeometry": "__$project$__/uvx-bubble-pop/assets/rings.glb",
+              "startTileIndex": {
+                "type": "ConstantValue",
+                "value": 0
+              },
+              "uTileCount": 1,
+              "vTileCount": 1,
+              "blending": 1,
+              "behaviors": [],
+              "worldSpace": false,
+              "transparent": true
+            },
+            "behaviorParameters": [
+              {
+                "type": "Rotation3DOverLife",
+                "angularVelocity": {
+                  "type": "RandomQuat"
+                },
+                "dynamic": false
+              },
+              {
+                "type": "ColorOverLife",
+                "color": {
+                  "type": "Gradient",
+                  "functions": [
+                    {
+                      "function": {
+                        "type": "ColorRange",
+                        "a": {
+                          "r": 1,
+                          "g": 1,
+                          "b": 1,
+                          "a": 0
+                        },
+                        "b": {
+                          "r": 1,
+                          "g": 1,
+                          "b": 1,
+                          "a": 1
+                        }
+                      },
+                      "start": 0
+                    },
+                    {
+                      "start": 0.5,
+                      "function": {
+                        "type": "ColorRange",
+                        "a": {
+                          "r": 1,
+                          "g": 1,
+                          "b": 1,
+                          "a": 1
+                        },
+                        "b": {
+                          "r": 1,
+                          "g": 1,
+                          "b": 1,
+                          "a": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "parent": "ebea1b37-8b83-4873-8d1c-a663c9d171f5",
+      "index": 0,
+      "name": "New Particle Emitter 2"
+    }
+  },
+  "root": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71"
+}
